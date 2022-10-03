@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+
+
+
+{% block body %}
+
+<div class="home-container">
+    
+    <div>{% include 'core/otherUsers.html' %}</div>
+
+    <div>
+        {% if request.user.is_authenticated %}
+        <form  method="POST"  enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form.as_p}}
+          <input class="button" type="submit" value="Submit"/>
+        </form>
+      {% endif %}
+      {% include 'core/feed.html' %}</div>
+
+    <div></div>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 174, 0);
+}
+
+
+.nav{
+    width:100%;
+    height:6em;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
+.nav a:hover{
+    color:rgb(117, 108, 250)
+}
+
+
+input{
+    font-size:2em;
+    width:100%;
+    margin-top:0.2em;
+}
+textarea{
+    font-size:2em;
+    width:100%;
+    resize: none;
+    margin-top: 0.2em;
+}
+/* Below this is page specific code */
+
+
+.home-container{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+
+
+
+/* This is feed code*/
+.feed-container{
+    padding:1em;
+}
+.post{
+    background-color: rgba(0, 181, 236, 0.1);
+    padding:1em;
+    margin:1em;
+    border-radius: 0.5em;
+}
+.post a{
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+.post a:hover{
+    color:rgb(117, 108, 250)
+}
+.post-heading img{
+    width:100px;
+    height:100px;
+}
+.post-content img{
+    width:500px;
+}
+
+
+/* This is user code*/
+.user-container{
+    padding:1em;
+}
+
+.user{
+    background-color: rgba(0, 181, 236, 0.1);
+    padding:1em;
+    margin:1em;
+    border-radius: 0.5em;
+}
+.user a{
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+.user a:hover{
+    color:rgb(117, 108, 250)
+}
+.user img{
+    width:100px;
+    height:100px;
+}
+
+
+/* This is login/register code*/
+.form-container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    margin-top:16em;
+}
+
+
+
+
+/* This is profile page code*/
+.profile-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:1em;
+}
+.profile-data{
+    background-color: rgba(0, 181, 236, 0.1);
+    padding:1em;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+.profile-data img{
+    max-width:100%;
+}

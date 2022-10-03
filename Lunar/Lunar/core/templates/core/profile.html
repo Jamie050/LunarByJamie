@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+<title>Profile</title>
+
+{% endblock title %}
+
+
+
+
+{% block body %}
+
+<div class="profile-container">
+    <div class="profile-data">
+        <img src={{profile.avatar.url}}>
+        <h1>{{profile.user.username | capfirst}}</h1>
+        <div>
+            <h2>My Bio</h2>
+            <h3>{{profile.bio}}</h3>
+        </div>
+        {% if request.user.userprofile.id == profile.id %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input class="button" type="submit" value="Update"/>
+        </form>
+        {% else%}
+
+        {% endif %}
+    </div>
+    <div class="profile-pics">
+        {% include 'core/feed.html' %}
+    </div>
+    
+</div>
+
+{% endblock body %}
