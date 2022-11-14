@@ -1,0 +1,8 @@
+<div class="user-container">
+    {% for profile in profiles  %}
+      <div class="user">
+        <img src="{{ profile.avatar.url}}">
+        <h1><a href="{% url 'profile' profile.user_id %}">{{profile.user.username}}</a></h1>
+      </div>
+    {% endfor %}
+</div>

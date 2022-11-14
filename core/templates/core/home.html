@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+
+
+
+{% block body %}
+
+<div class="home-container">
+    
+    <div>{% include 'core/otherUsers.html' %}</div>
+
+    <div>
+      {% include 'core/feed.html' %}
+    </div>
+
+    <div></div>
+</div>
+
+{% endblock body %}

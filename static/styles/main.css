@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:helvetica;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    background-color:#262626;
+    overflow:hidden;
+}
+
+
+.nav{
+    width:100%;
+    height:6em;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size:1em;
+}
+
+.nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
+.nav a:hover{
+    color:rgb(117, 108, 250)
+}
+
+
+input{
+    font-size:2em;
+    width:100%;
+    margin-top:0.2em;
+}
+textarea{
+    font-size:2em;
+    width:100%;
+    resize: none;
+    margin-top: 0.2em;
+}
+/* Below this is page specific code */
+
+
+.home-container{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+
+
+
+/* This is feed code*/
+.feed-container{
+    padding:1em;
+    overflow-y:Scroll;
+    height:80vh;
+    margin-top:2vh;
+    margin-bottom:2h;
+}
+
+.feed-container::-webkit-scrollbar {
+display:none;
+}
+
+.post-form-container{
+    background-color: rgba(255,255,255, 0.1);
+    padding:1em;
+    margin:1em;
+    border-radius: 0.5em;
+    color:white;
+    font-size:1em;
+}
+.post{
+    background-color: rgba(255,255,255, 0.1);
+    padding:1em;
+    margin:1em;
+    border-radius: 0.5em;
+    max-width: 800px;
+    word-wrap: break-word;
+    color:#d4d4d4;
+}
+.post a{
+    text-decoration: none;
+    color:rgb(255,255,255)
+}
+.post a:hover{
+    color:rgb(117, 108, 250)
+}
+.post-heading{
+    display:flex;
+    justify-content:left;
+    align-items:center
+}
+.post-heading img{
+    width:100px;
+    height:100px;
+    border:5px solid #121212;
+    border-radius:50%;
+    margin-right:1em;
+}
+.post-content h1{
+    padding:0.1em;
+    font-size:2.5em;
+    color:#d3d3d3;
+}
+.post-content img{
+    width:100%;
+    max-height: 500px;
+}
+
+
+/* This is user code*/
+.user-container{
+    padding:1em;
+    overflow-y:Scroll;
+    height:80vh;
+    margin-top:2vh;
+    margin-bottom:2h;
+}
+.user-container::-webkit-scrollbar{
+display:none;
+}
+
+.user{
+    background-color: rgba(255,255,255, 0.1);
+    padding:1em;
+    margin:1em;
+    border-radius: 0.5em;
+    color:#d4d4d4;
+    display:flex;
+    align-items:center;
+}
+.user a{
+    text-decoration: none;
+    color:#d4d4d4;
+}
+.user a:hover{
+    color:rgb(117, 108, 250)
+}
+.user img{
+    width:100px;
+    height:100px;
+    border:5px solid #121212;
+    border-radius:50%;
+    margin-right:1em;
+}
+
+
+/* This is login/register code*/
+.form-container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    margin-top:16em;
+}
+
+
+
+/* This is profile page code*/
+.profile-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:1em;
+}
+
+
+
+.profile-data{
+    background-color: rgba(255,255,255, 0.1);
+    padding:1em;
+    margin: 2em;
+    border-radius: 0.5em;
+    color:#d4d4d4;
+    overflow:scroll;
+    height:80vh;
+}
+.profile-data::-webkit-scrollbar {
+display:none;
+}
+.profile-data img{
+    width:100%;
+    border:10px solid #121212;
+    border-radius:1em;
+}
